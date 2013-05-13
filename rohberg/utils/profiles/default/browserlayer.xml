@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+     name="Rohberg Utils Layer"
+     interface="rohberg.utils.interfaces.IRohbergUtilsLayer"
+     />
+</layers>

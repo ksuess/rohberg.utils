@@ -27,6 +27,9 @@ setup(name='rohberg.utils',
           'setuptools',
           # -*- Extra requirements: -*-
       ],
+      extras_require={
+          'test': ['plone.app.testing',]
+      },
       entry_points="""
       # -*- Entry points: -*-
 

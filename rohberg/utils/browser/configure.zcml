@@ -1,0 +1,29 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="rohberg.utils">
+
+    <include package="plone.app.contentmenu" />
+    
+    <browser:page
+        for="plone.app.collection.interfaces.ICollection"
+        name="tabular_view_plus"
+        class=".views.TabularViewPlus"
+        layer="rohberg.utils.interfaces.IRohbergUtilsLayer"
+        permission="zope2.View"
+        />
+    
+        
+    <browser:menuItems
+        for="plone.app.collection.interfaces.ICollection"
+        menu="plone_displayviews">
+      <browser:menuItem
+          title="Tabular view plus"
+          action="tabular_view_plus"
+          />
+    </browser:menuItems>
+  
+</configure>
