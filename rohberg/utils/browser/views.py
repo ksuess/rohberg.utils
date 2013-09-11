@@ -11,6 +11,7 @@ class TabularViewPlus(BrowserView):
     template = ViewPageTemplateFile("tabularviewplus.pt")
     
     def new_icon(self, item):
+        """ If item is new to logged in user, then return image tag for icon """
         obj = item.getObject()
         plus_provider = IRohbergUtilsProvider(obj)
         if plus_provider._is_new(obj.modified()):

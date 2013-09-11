@@ -18,6 +18,7 @@ class RohbergUtilsProvider(object):
         self.portal = getSite()
 
     def _is_new(self, modified):
+        """ Is object seen by logged in user? """
         llt = getattr(aq_base(self), '_last_login_time', [])
         if llt == []:
             m = self.portal.portal_membership.getAuthenticatedMember()
