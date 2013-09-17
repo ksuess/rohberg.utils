@@ -1,6 +1,1 @@
-Introduction
-============
-
-
-
-This product may contain traces of nuts.
+- Collection: Additional View: Items new to logged in user are marked with icon.
